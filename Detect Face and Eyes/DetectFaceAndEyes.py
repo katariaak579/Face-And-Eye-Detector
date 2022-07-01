@@ -4,7 +4,7 @@ from cv2 import COLOR_BGR2GRAY
 facedatabase=cv2.CascadeClassifier("Haarcascades/haarcascade_frontalface_default.xml")
 eyedatabase=cv2.CascadeClassifier("Haarcascades/haarcascade_eye.xml")
 
-img = cv2.imread("Images/IMG20211231230759.jpg")
+img = cv2.imread("Add Image Path here")
 gray=cv2.cvtColor(img,COLOR_BGR2GRAY)
 
 faces=facedatabase.detectMultiScale(gray,scaleFactor=1.35,minNeighbors=5)
